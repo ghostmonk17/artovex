@@ -85,33 +85,41 @@ Users are stored in a MongoDB collection with the following schema:
   createdAt: Date
 }
 ```
-###✅ Artworks (Stored Locally)
--Metadata stored in data/artworks.json
--Images stored physically in /uploads
--Displayed using the API route:
- GET /api/artworks
- 
-##🧰 Run Locally
+### ✅ Artworks (Stored Locally)
 
-###✅ 1. Clone Repository
-  git clone https://github.com/itzsv413/artovex.git
-  cd artovex
+- Metadata stored in `data/artworks.json`
+- Images stored physically in `/uploads`
+- Displayed using the API route:
+
+```bash
+GET /api/artworks
+```
+## 🧰 Run Locally
+
+### ✅ 1. Clone Repository
+
+```bash
+git clone https://github.com/itzsv413/artovex.git
+cd artovex
+```
+
 ###✅ 2. Install Dependencies
-  npm install
+
+```bash
+npm install
+```
+
 ###✅ 3. Configure MongoDB
 
-Set your MongoDB connection string inside server.js:
+-Set your MongoDB connection string inside server.js:
 
+```bash
 const MONGODB_URI =
   process.env.MONGODB_URI ||
   "mongodb+srv://<user>:<password>@cluster0.xxx.mongodb.net/artovex";
+```
+-Replace <user> and <password> with your MongoDB Atlas credentials.
 
 ###✅ 4. Start Server
-npm start
-
-
-Then open your browser and visit:
-
-http://localhost:3000
 
 
