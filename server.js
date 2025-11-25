@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
@@ -11,8 +13,12 @@ const PORT = process.env.PORT || 3000;
 
 // ---------- MONGODB CONNECTION ----------
 
+<<<<<<< HEAD
 const MONGODB_URI =
   "mongodb+srv://username:Password@cluster0.y5muwfv.mongodb.net/artovex?appName=Cluster0";
+=======
+const MONGODB_URI = process.env.MONGODB_URI;
+>>>>>>> be35a81 (Use environment variables for MongoDB and secure config)
 
 mongoose
   .connect(MONGODB_URI)
