@@ -70,6 +70,7 @@ Artovex/
   /uploads             # ✅ Uploaded images
   /data
     artworks.json      # ✅ Metadata for artworks
+```
 How It Works
 ✅ Users (Stored in MongoDB)
 
