@@ -103,13 +103,13 @@ git clone https://github.com/itzsv413/artovex.git
 cd artovex
 ```
 
-###✅ 2. Install Dependencies
+### ✅ 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-###✅ 3. Configure MongoDB
+### ✅ 3. Configure MongoDB
 
 -Set your MongoDB connection string inside server.js:
 
@@ -120,6 +120,6 @@ const MONGODB_URI =
 ```
 -Replace <user> and <password> with your MongoDB Atlas credentials.
 
-###✅ 4. Start Server
+### ✅ 4. Start Server
 
 
