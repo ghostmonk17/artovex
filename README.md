@@ -111,15 +111,23 @@ npm install
 
 ### ✅ 3. Configure MongoDB
 
--Set your MongoDB connection string inside server.js:
+- Set your MongoDB connection string inside server.js:
 
 ```bash
 const MONGODB_URI =
   process.env.MONGODB_URI ||
   "mongodb+srv://<user>:<password>@cluster0.xxx.mongodb.net/artovex";
 ```
--Replace <user> and <password> with your MongoDB Atlas credentials.
+- Replace <user> and <password> with your MongoDB Atlas credentials.
 
 ### ✅ 4. Start Server
+
+```bash
+npm start
+```
+Then open your browser and visit:
+```bash
+http://localhost:3000
+```
 
 
