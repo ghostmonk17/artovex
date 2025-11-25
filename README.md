@@ -71,97 +71,47 @@ Artovex/
   /data
     artworks.json      # ✅ Metadata for artworks
 ```
-How It Works
-✅ Users (Stored in MongoDB)
+## ⚙️ How It Works
+
+### ✅ Users (Stored in MongoDB)
 
 Users are stored in a MongoDB collection with the following schema:
 
+```js
 {
   name: String,
   email: String,
   password: String, // hashed
   createdAt: Date
 }
-Artworks (Stored Locally)
+```
+###✅ Artworks (Stored Locally)
+-Metadata stored in data/artworks.json
+-Images stored physically in /uploads
+-Displayed using the API route:
+ GET /api/artworks
+ 
+##🧰 Run Locally
 
-Metadata stored in data/artworks.json
+###✅ 1. Clone Repository
+  git clone https://github.com/itzsv413/artovex.git
+  cd artovex
+###✅ 2. Install Dependencies
+  npm install
+###✅ 3. Configure MongoDB
 
-Images stored physically in /uploads
-
-Displayed using /api/artworks
-
-✅ Route Protection
-
-ensureAuth middleware restricts:
-
-/dashboard
-
-/api/upload
-
-Only logged-in users can upload.
-
-🧰 Run Locally
-✅ 1. Clone Repository
-git clone https://github.com/itzsv413/artovex.git
-cd artovex
-
-✅ 2. Install Dependencies
-npm install
-
-✅ 3. Configure MongoDB
-
-Set the connection string in server.js:
+Set your MongoDB connection string inside server.js:
 
 const MONGODB_URI =
   process.env.MONGODB_URI ||
   "mongodb+srv://<user>:<password>@cluster0.xxx.mongodb.net/artovex";
 
-
-Replace <user> and <password> with your MongoDB Atlas credentials.
-
-✅ 4. Start Server
+###✅ 4. Start Server
 npm start
 
 
-Open:
+Then open your browser and visit:
 
 http://localhost:3000
 
-🌐 Deployment (Render + MongoDB Atlas)
-✅ Steps
 
-Push project to GitHub
-
-Create a Web Service on Render
-
-Connect GitHub Repo
-
-Set the following environment variables:
-
-MONGODB_URI
-
-SESSION_SECRET
-
-Deploy ✅
-Render will provide a live link like:
-
-https://artovex.onrender.com
-⚠️ Note: On the free Render tier, the app may “sleep” when idle and take a few seconds to wake.
-💡 Future Improvements
-
-Store artworks directly in MongoDB
-Cloud storage for images (Cloudinary / AWS S3)
-Edit/Delete artworks
-User profiles
-Categories & search filters
-filters
-
-👨‍💻 Author
-
-Sachin Vishwakarma
-
-GitHub: https://github.com/itzsv413
-
-LinkedIn: https://www.linkedin.com/in/sachin-vishwakarma413
-🙌 Thanks for Visiting!
-If you liked this project, connect with me on LinkedIn and check out my other work!
