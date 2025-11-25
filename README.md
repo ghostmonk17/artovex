@@ -129,5 +129,26 @@ Then open your browser and visit:
 ```bash
 http://localhost:3000
 ```
+## 🌐 Deployment (Render + MongoDB Atlas)
+
+### ✅ Steps
+
+- Push the project to GitHub
+- Create a Web Service on Render
+- Connect your GitHub repository
+- Add the following Environment Variables:
+  MONGODB_URI
+  SESSION_SECRET
+- Deploy
+
+- Render will provide a live public link such as:
+  ```bash
+  https://artovex.onrender.com
+  ```
+  ## Author
+  
+  ### Sachin Vishwakarma
+ - GitHub: https://github.com/itzsv413
+ - LinkedIn: https://www.linkedin.com/in/sachin-vishwakarma413
 
 
