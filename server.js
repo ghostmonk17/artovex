@@ -38,11 +38,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   session({
-    secret: "artovex-secret-key",
+    secret: process.env.SESSION_SECRET || "artovex-secret-key",
     resave: false,
     saveUninitialized: false,
   })
 );
+
 
 // ---------- STATIC FILES ----------
 
