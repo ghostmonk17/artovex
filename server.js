@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 // ---------- MONGODB CONNECTION ----------
 
 const MONGODB_URI =
-  "mongodb+srv://artovex_user:Sachin123@cluster0.y5muwfv.mongodb.net/artovex?appName=Cluster0";
+  "mongodb+srv://username:Password@cluster0.y5muwfv.mongodb.net/artovex?appName=Cluster0";
 
 mongoose
   .connect(MONGODB_URI)
