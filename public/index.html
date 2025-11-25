@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artovex Gallery - Explore Creativity</title>
+
+
+
+  <!-- 
+    - Favicon: This link sets the favicon for the webpage. Favicon is the small icon that appears in the browser tab.
+  -->
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.jpg">
+
+  <!-- 
+    - Custom CSS Link: This link imports a custom CSS file to style the webpage.
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - Google Font Link: This link imports Google Fonts for use in the webpage.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - Preload Images: These links preload images to improve webpage performance by fetching them in advance.
+  -->
+  <link rel="preload" as="image" href="./assets/images/gallery-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Photo.jpeg">
+  <link rel="preload" as="image" href="./assets/images/painting-2.jpg">
+  <!-- Add more preload links for other images if needed -->
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER: This section contains the header of the webpage, including the logo, navigation, and menu toggle button.
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="#" class="logo">
+      <ion-icon name="brush-sharp" aria-hidden="true"></ion-icon>
+      <span class="span">Artovex</span>
+      </a>
+
+
+      <!-- Navigation Menu -->
+      <nav class="navbar" data-navbar>
+        <!-- Close Menu Button -->
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <!-- Navbar Links -->
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+          <li>
+          <a href="/login" class="navbar-link">Upload image</a>
+          </li>
+
+ 
+        </ul>
+      </nav>
+
+
+
+      <!-- Open Menu Button -->
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO: This section is the hero section with a background image and introductory text.
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('assets/images/11.jpg')">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">
+                <strong class="strong">Artovex</strong> Gallery
+              </p>
+              <h1 class="h1 hero-title">Where Digital Art Comes Alive</h1>
+              <p class="section-text">
+                Explore a modern space where creators showcase unique artworks, photography, and digital creations.
+              </p>
+
+
+
+            <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY: This section displays the gallery of artworks.
+      -->
+
+      <section class="section gallery" id="gallery" aria-label="gallery">
+        <div class="container">
+          <p class="section-subtitle">Art Gallery</p>
+          <h2 class="h2 section-title text-center">Discover Stunning Artworks</h2>
+          <ul class="gallery-list has-scrollbar" id="gallery-list">
+  <!-- Artovex gallery items will be injected here by JS -->
+        </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT: This section provides information about the virtual art gallery.
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+          <div class="about-content">
+            <p class="section-subtitle">About Artovex</p>
+            <h2 class="h2 section-title">Welcome to Artovex Gallery</h2>
+
+            <p class="section-text">
+            Artovex is a modern virtual art space designed for artists and art lovers. It lets anyone explore, admire, and soon—upload their own creations to share with the world.
+            <br><br>
+            <b>A New Era of Creativity</b><br>
+            Artovex brings a digital gallery experience that feels fresh, inspiring, and accessible from anywhere.
+          </p>
+
+
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER: This section contains the footer of the webpage.
+  -->
+
+  <footer class="footer">
+    <!-- Footer content can be adjusted as needed -->
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP: This section provides a button to scroll back to the top of the webpage.
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - Custom JS Likink: This script tag links to a custom JavaScript file for the webpage.
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - Ionicon Link: This script tag links to Ionicons, which provides a library of icons for use in the webpage.
+  -->
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

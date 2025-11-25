@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "title": "Enchanted Wilderness: A Nature Scenario",
+    "description": "Nature Scenario Art transports viewers to idyllic landscapes where the beauty of the natural world unfolds in all its splendor. With masterful strokes of color and light, this artwork captures the essence of pristine forests, serene lakes, majestic mountains, and expansive meadows.",
+    "fileUrl": "/assets/images/photo3.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Colorful Sparrow",
+    "description": "Colorful Sparrow Art is a captivating representation of nature's beauty, capturing the vibrant essence of one of the most beloved avian species. This artwork celebrates the charm and elegance of the sparrow, a creature often overlooked yet revered for its resilience.",
+    "fileUrl": "/assets/images/photo6.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Sailing Into the Sunset",
+    "description": "Sailing Into the Sunset is a captivating maritime artwork that transports viewers to the open sea, where a majestic ship gracefully glides across the horizon.",
+    "fileUrl": "/assets/images/photo5.jpg"
+  }
+]
