@@ -34,13 +34,13 @@
         </header>
 
         <div class="dashboard-content">
-          <!-- Upload Form -->
+        <!-- Upload Form -->
           <div class="dashboard-card">
             <div class="dashboard-card__header">
               <div>
                 <h2 class="h3">Upload new artwork</h2>
                 <p class="card-helper">High-resolution JPG or PNG recommended.</p>
-              </div>
+            </div>
             </div>
 
             <form id="upload-form" class="dashboard-form" enctype="multipart/form-data">
@@ -57,19 +57,19 @@
 
               <label for="image" class="dashboard-label file-label">
                 <span>Artwork image</span>
-                <input type="file" id="image" name="image" accept="image/*" required />
+              <input type="file" id="image" name="image" accept="image/*" required />
                 <span class="file-hint">Drag & drop or click to choose a file</span>
               </label>
 
               <button type="submit" class="btn btn-primary dashboard-submit">
-                Upload Artwork
-              </button>
+              Upload Artwork
+            </button>
 
               <p id="upload-status" class="section-text upload-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
+          </form>
+        </div>
 
-          <!-- Existing artworks (admin view) -->
+        <!-- Existing artworks (admin view) -->
           <div class="dashboard-card">
             <div class="dashboard-card__header">
               <div>
@@ -81,7 +81,7 @@
               </button>
             </div>
             <div id="artwork-list" class="dashboard-grid" aria-live="polite">
-              <!-- Filled by JS -->
+            <!-- Filled by JS -->
             </div>
           </div>
         </div>

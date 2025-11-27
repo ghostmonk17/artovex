@@ -1649,6 +1649,11 @@ body {
   text-transform: none;
 }
 
+.gallery-card .btn-link {
+  --color: var(--coquelicot);
+  font-weight: var(--fw-700);
+}
+
 .gallery-card .card-banner::after {
   content: "Tap to preview";
   position: absolute;
@@ -1896,6 +1901,60 @@ body {
 .contact-card ul {
   display: grid;
   gap: 6px;
+}
+
+.programs {
+  background: var(--surface-1);
+}
+
+.program-timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 2px solid var(--border-subtle);
+  display: grid;
+  gap: 40px;
+}
+
+.program-timeline li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.program-timeline li::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--coquelicot);
+  box-shadow: 0 0 0 6px var(--coquelicot_10);
+}
+
+.program-date {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-soft);
+  margin-bottom: 10px;
+}
+
+.program-card {
+  background: var(--surface-2);
+  border-radius: 16px;
+  padding: 18px 22px;
+  box-shadow: 0 16px 35px rgba(5, 12, 20, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.program-card span {
+  font-size: 1.3rem;
+  color: var(--coquelicot);
+  font-weight: var(--fw-700);
 }
 
 .lightbox {
